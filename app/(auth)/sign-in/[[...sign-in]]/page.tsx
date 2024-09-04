@@ -1,5 +1,5 @@
 import { Loader2 } from "lucide-react";
-import { SignUp, ClerkLoaded, ClerkLoading } from "@clerk/nextjs";
+import { SignIn, ClerkLoaded, ClerkLoading } from "@clerk/nextjs";
 import Image from "next/image";
 
 export default function Page() {
@@ -16,7 +16,7 @@ export default function Page() {
         <div className="flex items-center justify-center mt-8">
           {/* 这里不加 ClerkLoaded 的话，每次刷新页面会“闪烁” */}
           <ClerkLoaded>
-            <SignUp />
+            <SignIn />
           </ClerkLoaded>
           <ClerkLoading>
             <Loader2 className="animate-spin text-muted-foreground" />
